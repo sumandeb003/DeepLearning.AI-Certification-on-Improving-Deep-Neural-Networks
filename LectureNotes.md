@@ -11,5 +11,5 @@
      - In statistics, bias is the average distance between the learned function (model) and the actual/true relationship. Bias leads to loss of training accuracy.
        
 4. **Bias-Variance Tradeoff**:
-     - To reduce bias, we try to match the learned function with the true/real relationship. In doing so, we end up matching the learned function with the extra peculiarities/complexities of the training data. This increases the variance of the model.
-     - To reduce variance, we try to reduce the complexity of the learned function. This leads to a simplified model which means more bias.
+     - To reduce bias, we try to match the learned function with the true/real relationship. In doing so, we end up matching the learned function with the extra peculiarities/complexities of the training data i.e. overfitting the training data. This increases the variance of the model.
+     - To reduce variance, we try to reduce the complexity of the learned function. This leads to a simplified model which underfits or poorly fits the training data, thereby, increasing bias.
