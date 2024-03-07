@@ -14,5 +14,5 @@
      - To reduce bias, we try to match the learned function with the true/real relationship. In doing so, we end up matching the learned function with the extra peculiarities/complexities of the training data i.e. overfitting the training data. This increases the variance of the model.
      - To reduce variance, we try to reduce the complexity of the learned function. This leads to a simplified model which underfits or poorly fits the training data, thereby, increasing bias.
 
-4. High Bias (training accuracy) --> Bigger NN (More hidden layers, more hidden units per layer), Training longer --> Lower Bias
-5. High Variance (validation/test accuracy) --> More training data, Regularization --> Lower Variance
+4. **High Bias (training accuracy) --> Bigger NN (More hidden layers, more hidden units per layer), Training longer --> Lower Bias**
+5. **High Variance (validation/test accuracy) --> More training data, Regularization --> Lower Variance**
