@@ -5,8 +5,8 @@
 
     We can define **$\color{red}{\textbf{bias}}$** and **$\color{red}{\textbf{variance}}$** problems as:
      - **High variance => Poor generalizability => Big change in accuracy from training set to test/validation set**
-     - In statistics, we don't want the model's performance (accuracy) to change much with little changes in the training data.
-     - Variance 
+     - Variance is the change in the model's performance (accuracy) with changes in the dataset.
+     - In statistics, we don't want the model's performance (accuracy) to change much with little changes in the training dataset. 
      - **High bias => Low Accuracy on training set => Underfitting (poor fitting) the training data by being linear (instead of being curve, say, quadratic etc)**
      - In statistics, bias is calculated as the average squared distance between the actual data points and the corresponding points on the learned function (model). Bias is a measure of the inability of the model to capture the true relationship. High bias leads to loss of training accuracy.
        
