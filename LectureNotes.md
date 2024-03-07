@@ -5,7 +5,8 @@
 
     We can define **$\color{red}{\textbf{bias}}$** and **$\color{red}{\textbf{variance}}$** problems as:
      - **High bias => Low Accuracy on training set => Underfitting (poor fitting) the training data by being linear (instead of being curve, say, quadratic etc)**
-     - **High variance => Poor generalizability => Big change in accuracy from training set to test/validation set** In statistics, we don't want the model's performance to change much with little changes in the training data.
+     - **High variance => Poor generalizability => Big change in accuracy from training set to test/validation set**
+     - In statistics, we don't want the model's performance to change much with little changes in the training data.
 
 3. **Bias leads to loss of training accuracy**
 4. **High variance => Big change in accuracy from training set to test/validation set => Overfitting some, not all, training samples by being extra or over flexible in some region of space=> Low error on training set, High error on validation set**
