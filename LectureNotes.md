@@ -8,7 +8,7 @@
      - In statistics, we don't want the model's performance (accuracy) to change much with little changes in the training data.
      - Variance 
      - **High bias => Low Accuracy on training set => Underfitting (poor fitting) the training data by being linear (instead of being curve, say, quadratic etc)**
-     - In statistics, bias is the average distance between the learned function (model) and the actual/true relationship. Bias leads to loss of training accuracy.
+     - In statistics, bias is calculated as the average squared distance between the actual data points and the corresponding points on the learned function (model). Bias is a measure of the inability of the model to capture the true relationship. High bias leads to loss of training accuracy.
        
 4. **Bias-Variance Tradeoff**:
      - To reduce bias, we try to match the learned function with the true/real relationship. In doing so, we end up matching the learned function with the extra peculiarities/complexities of the training data i.e. overfitting the training data. This increases the variance of the model.
