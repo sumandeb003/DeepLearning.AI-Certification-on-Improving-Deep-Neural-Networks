@@ -2,6 +2,7 @@
 2.  Assuming:
      - Bayes error is quite small
      - Training and validation sets are drawn from the same distribution
+
     We can define **$\color{red}{\textbf{bias}}$** and **$\color{red}{\textbf{variance}}$** problems as:
      - **Looking at your training set error, you can get a sense of how well you are fitting, at least the training data, and so that tells you if you have a $\color{red}{\textbf{bias problem}}$.**
      - **And then looking at how much higher your error goes, when you go from the training set to the validation set, that should give you a sense of how bad is the $\color{red}{\textbf{variance problem}}$.** So you're doing a good job generalizing from a training set to the dev set, that gives you a sense of your variance.
