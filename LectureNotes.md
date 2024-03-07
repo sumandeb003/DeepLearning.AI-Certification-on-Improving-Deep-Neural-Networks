@@ -12,4 +12,4 @@
        
 4. **Bias-Variance Tradeoff**:
      - To reduce bias, we try to match the learned function with the true/real relationship. In doing so, we end up matching the learned function with the extra peculiarities/complexities of the training data. This increases the variance of the model.
-     - Reducing variance is 
+     - To reduce variance, we try to reduce the complexity of the learned function. This leads to a simplified model which means more bias.
