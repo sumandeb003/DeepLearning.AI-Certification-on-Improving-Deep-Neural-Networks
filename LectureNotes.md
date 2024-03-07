@@ -7,9 +7,7 @@
      - **High variance => Poor generalizability => Big change in accuracy from training set to test/validation set**
      - In statistics, we don't want the model's performance (accuracy) to change much with little changes in the training data.
      - **High bias => Low Accuracy on training set => Underfitting (poor fitting) the training data by being linear (instead of being curve, say, quadratic etc)**
-     - In statistics, bias is the average distance between the learned function (model) and the actual/true function. Bias leads to loss of accuracy - training and test/validation.
-
-3. **Bias leads to loss of training accuracy**
+     - In statistics, bias is the average distance between the learned function (model) and the actual/true function. Bias leads to loss of training accuracy.
+       
 4. **High variance => Big change in accuracy from training set to test/validation set => Overfitting some, not all, training samples by being extra or over flexible in some region of space=> Low error on training set, High error on validation set**
-5. 
 6. **Overfitting data in some region while underfitting in some other region of space => High Bias, High Variance**
