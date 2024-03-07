@@ -4,9 +4,9 @@
    - Bayes error is quite small
    - Training and validation sets are drawn from the same distribution
 
-i. **Looking at your training set error, you can get a sense of how well you are fitting, at least the training data, and so that tells you if you have a $\color{red}{\textbf{bias problem}}$.**
+ i. **Looking at your training set error, you can get a sense of how well you are fitting, at least the training data, and so that tells you if you have a $\color{red}{\textbf{bias problem}}$.**
 
-ii. **And then looking at how much higher your error goes, when you go from the training set to the validation set, that should give you a sense of how bad is the $\color{red}{\textbf{variance problem}}$.** So you're doing a good job generalizing from a training set to the dev set, that gives you a sense of your variance. All this is under the assumption that the Bayes error is quite small and that your training and your dev sets are drawn from the same distribution.
+ ii. **And then looking at how much higher your error goes, when you go from the training set to the validation set, that should give you a sense of how bad is the $\color{red}{\textbf{variance problem}}$.** So you're doing a good job generalizing from a training set to the dev set, that gives you a sense of your variance. All this is under the assumption that the Bayes error is quite small and that your training and your dev sets are drawn from the same distribution.
 6. **High variance => Big change in accuracy/error from training set to test/validation set => Overfitting some, not all, data samples by being extra or over flexible in some region of space=> Low error on training set, High error on validation set**
 7. **High Bias => Low Accuracy/High Error on training set => Underfitting the data by being linear (instead of being curve, say, quadratic etc)**
 8. **Overfitting data in some region while underfitting in some other region of space => High Bias, High Variance**
