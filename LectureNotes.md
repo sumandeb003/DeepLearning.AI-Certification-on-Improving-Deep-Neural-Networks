@@ -19,3 +19,5 @@
 6. **Bigger network has more parameters and hence, more learning flexibility or capacity. This means increased probability to overfit**
 7. Regularization is the limitation of the NN model's learning flexibility.v
 8. **Regularization is about simplifying the model to combat overfitting.**
+9. Types of Regularization: L1, L2, Dropout, Early Stopping training
+10. 
