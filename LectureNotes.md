@@ -17,3 +17,4 @@
 4. **High Bias (training accuracy) --> Bigger NN (More hidden layers, more hidden units per layer), Training longer --> Lower Bias**
 5. **High Variance (validation/test accuracy) --> More training data, Regularization --> Lower Variance**
 6. **Bigger network has more parameters and hence, more learning flexibility or capacity. This means increased probability to overfit**
+7. Regularization is the limitation of hteNN model's learning flexibility .
