@@ -21,7 +21,10 @@
 
 ![./Overfitting.png](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/main/Overfitting.png)
 
-8. **Regularization is the process of reducing the weights of the model to reduce overfitting.**
-9. To regularize the NN model *i.e.*, to reduce the weights, a term containing the weights is added to the loss function. This term is called the regularization constant. 
-10. Types of Regularization: L1, L2, Dropout, Early Stopping training
-11. 
+8. **Regularization is the process of reducing the weights of the model to prevent overfitting.**
+9. To regularize the NN model *i.e.*, to reduce the weights, a term containing the weights is added to the loss function. This term is called the regularization constant. Minimizing the loss function during training also minimizes the weights. If the weights go up, the loss value goes up. Training brings down the loss value.
+10. Two types of regularization terms are possible:
+     - L1: $\lambda/2m$
+     - L2:
+12. Types of Regularization: L1, L2, Dropout, Early Stopping training
+13. 
