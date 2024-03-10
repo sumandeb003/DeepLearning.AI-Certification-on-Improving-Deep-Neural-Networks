@@ -8,7 +8,7 @@
      - Variance is the change in the model's performance (accuracy) with changes in the dataset.
      - In statistics, we don't want the model's performance (accuracy) to change much with little changes in the training dataset. 
      - **High bias => Low Accuracy on training set => Underfitting (poor fitting) the training data by being an oversimplified model (e.g. linear instead of being curve, say, quadratic etc)**
-     - In statistics, bias is calculated as the average squared distance between the actual data points and the corresponding points on the learned function (model). Bias is a measure of the inability of the model to capture the true relationship. High bias leads to loss of training accuracy.
+     - In statistics, bias is calculated as the average squared distance between the actual data points and the corresponding points on the learned function (model). Bias is a measure of the inability of the model to capture/match/reproduce the true relationship. High bias leads to loss of training accuracy.
        
 3. **Bias-Variance Tradeoff**:
      - To reduce bias, we try to match the learned function with the true/real relationship. In doing so, we end up matching the learned function with the extra peculiarities/complexities of the training data i.e. overfitting the training data. This increases the variance of the model.
@@ -18,6 +18,6 @@
 5. **High Variance (validation/test accuracy) --> More training data, Regularization --> Lower Variance**
 6. **Bigger network has more parameters and hence, more learning flexibility or capacity. This means increased probability to overfit**
 7. 
-8. **Regularization is about simplifying the model to combat overfitting.** $\color{red}{\textbf{How to simplify? What do you even mean by simplifying a model?}}$ Simplifying, here, means getting a simpler model/function. e.g. a straight line ($wx+b$) is a simpler model/function relative to a curved, say quadratic($w_2x^2+w_1x+b$) function or a plane ($w_2y+w_1x+b$); a quadratic function or a plane is simpler than a cubic ($w_3x^3+w_2x^2+w_1x+b$) function. As you can see from these functions, a simpler function has fewer weights (and corresponding features). Note: **A weight is the quantification or numerical value of the importance given to an input feature (in case of logistic regression) or neuronal connection (in case of NNs).**
+8. **Regularization is about simplifying the model to combat overfitting.** $\color{red}{\textbf{How to simplify? What do you even mean by simplifying a model?}}$ Simplifying, here, means getting a simpler model/function. e.g. a straight line ($wx+b$) is a simpler model/function relative to a curved, say quadratic($w_2x^2+w_1x+b$) function or a plane ($w_2y+w_1x+b$); a quadratic function or a plane is simpler than a cubic ($w_3x^3+w_2x^2+w_1x+b$) function. As you can see from these functions, a simpler function has fewer weights (and corresponding features) and hence, a smaller network. Note: **A weight is the quantification or numerical value of the importance given to an input feature (in case of logistic regression) or neuronal connection (in case of NNs). High weight means an input has high importance. When a model overfits, **
 9. Types of Regularization: L1, L2, Dropout, Early Stopping training
 10. 
