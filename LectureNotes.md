@@ -18,6 +18,7 @@
 5. **High Variance (validation/test accuracy) --> More training data, Regularization --> Lower Variance**
 6. **Bigger network has more parameters (weights) and hence, more flexibility or capacity to learn. This means increased probability of overfitting.**
 7. 
-8. **Regularization is about simplifying the model to combat overfitting.** $\color{red}{\textbf{How to simplify? What do you even mean by simplifying a model?}}$ Simplifying, here, means getting a simpler model/function. e.g. a straight line ($wx+b$) is a simpler model/function relative to a curved, say a plane ($w_2y+w_1x+b$). As you can see from these functions, a simpler function has fewer weights (and corresponding features) and hence, a smaller network. Note: **A weight is the quantification or numerical value of the importance given to an input feature (in case of logistic regression) or neuronal connection (in case of NNs). High weight means an input has high importance. When a weight is high, it means that the model's behavior follows the variations in the corresponding input feature more strongly. **
-9. Types of Regularization: L1, L2, Dropout, Early Stopping training
-10. 
+8. **Regularization is about simplifying the model to combat overfitting.** $\color{red}{\textbf{How to simplify? What do you even mean by simplifying a model?}}$ Simplifying, here, means getting a simpler model/function. e.g. a straight line ($wx+b$) is a simpler model/function relative to a curved, say a plane ($w_2y+w_1x+b$). As you can see from these functions, a simpler function has fewer weights (and corresponding features) and hence, a smaller network. Note: **A weight is the quantification or numerical value of the importance given to an input feature (in case of logistic regression) or neuronal connection (in case of NNs). High weight means an input has high importance. When a weight is high, it means that the model's behavior follows the variations in the corresponding input feature more strongly.
+9. **
+10. Types of Regularization: L1, L2, Dropout, Early Stopping training
+11. 
