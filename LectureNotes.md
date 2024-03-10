@@ -18,6 +18,6 @@
 5. **High Variance (validation/test accuracy) --> More training data, Regularization --> Lower Variance**
 6. **Bigger network has more parameters and hence, more learning flexibility or capacity. This means increased probability to overfit**
 7. 
-8. **Regularization is about simplifying the model to combat overfitting.** How to simplify? What do you even mean by simplifying a model? Simplifying means getting a simpler model or function. e.g. a straight line ($wx+b$) is a simpler model or function relative to a curved, say quadratic($w_2x^2+w_1x+b$) or cubic ($w_3x^3+w_2x^2+w_1x+b$) function.
+8. **Regularization is about simplifying the model to combat overfitting.** How to simplify? What do you even mean by simplifying a model? Simplifying means getting a simpler model or function. e.g. a straight line ($wx+b$) is a simpler model or function relative to a curved, say quadratic($w_2x^2+w_1x+b$) function or a plane ($w_2y+w_1x+b$); a quadratic function is simpler than a cubic ($w_3x^3+w_2x^2+w_1x+b$) function. As you can see from these functions, a 
 9. Types of Regularization: L1, L2, Dropout, Early Stopping training
 10. 
