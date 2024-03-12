@@ -22,10 +22,10 @@
 ![./Overfitting.png](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/main/Overfitting.png)
 
 8. **Regularization is the process of simplifying the model to prevent overfitting.** A model can be simplified or a simpler model can be obtained by either reducing the size (no. of neurons) of the NN or reducing the weight of certain neurons in the NN.
-9. To regularize the NN model *i.e.*, to reduce the weights, a term containing the weights is added to the loss function. Minimizing the loss function during training also minimizes the weights. If the weights go up, the loss value goes up. Training brings down the loss value.
+9. To regularize the NN model by reducing the weights, a term containing the weights is added to the loss function. Minimizing the loss function during training also minimizes the weights. If the weights go up, the loss value goes up. Training brings down the loss value.
 10. Two types of regularization terms are possible:
      - L1: $\frac{\lambda}{2m}\Sigma\vert w \vert$; Here, $\lambda$ is called the regularization constant.
      - L2: $\frac{\lambda}{2m}\Sigma w^2$
 12. Instead of choosing either one, both L1 and L2 terms can be added to the loss function.
 13. Types of Regularization: L1, L2, Dropout, Early Stopping training
-14. In Dropout regularization, 
+14. In Dropout regularization, there is a probability assigned to each neuron in the NN. Based on that probability, the neurons are considered or not considered during backpropagation. If a neuron is not considered, its input and output connections/weights are not updated during backpropagation. 
