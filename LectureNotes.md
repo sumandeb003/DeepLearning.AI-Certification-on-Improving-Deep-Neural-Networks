@@ -28,4 +28,4 @@
      - L2: $\frac{\lambda}{2m}\Sigma w^2$
 12. Instead of choosing either one, both L1 and L2 terms can be added to the loss function.
 13. Types of Regularization: L1, L2, Dropout, Early Stopping training
-14. In Dropout regularization, there is a probability assigned to each neuron in the NN. Based on that probability, the neurons are considered or not considered during backpropagation. If a neuron is not considered, its input and output connections/weights are not updated during backpropagation. 
+14. In Dropout regularization, a probability is assigned to each neuron in the NN. Based on that probability, the neurons are considered or ignored (dropped out) during backpropagation. If a neuron is dropped, its input and output connections/weights are not updated during backpropagation. 
