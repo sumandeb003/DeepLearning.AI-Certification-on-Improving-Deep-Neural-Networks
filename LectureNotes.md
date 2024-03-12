@@ -24,7 +24,7 @@
 8. **Regularization is the process of simplifying the model to prevent overfitting.** A model can be simplified or a simpler model can be obtained by either reducing the size (no. of neurons) of the NN or reducing the weight of certain neurons in the NN.
 9. To regularize the NN model by reducing the weights, a term containing the weights is added to the loss function. Minimizing the loss function during training also minimizes the weights. If the weights go up, the loss value goes up. Training brings down the loss value.
 10. Two types of regularization terms are possible:
-     - L1: $\frac{\lambda}{2m}\Sigma\vert w \vert$; Here, $\lambda$ is called the regularization constant. It is a hyperparameter and needs to be adjusted via hit and trial.
+     - L1: $\frac{\lambda}{2m}\Sigma\vert w \vert$; Here, $\lambda$ is called the regularization constant. It is a hyperparameter that needs to be adjusted via hit and trial.
      - L2: $\frac{\lambda}{2m}\Sigma w^2$
 12. Instead of choosing either one, both L1 and L2 terms can be added to the loss function.
 13. Types of Regularization: L1, L2, Dropout, More training data, Early Stopping training
