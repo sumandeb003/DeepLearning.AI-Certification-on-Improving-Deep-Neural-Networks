@@ -30,4 +30,5 @@
 13. Types of Regularization: L1, L2, Dropout, Early Stopping training
 14. In Dropout regularization, a probability is assigned to each neuron in the NN. Based on that probability, the neurons are considered or ignored (dropped out) during backpropagation. If a neuron is dropped out, its input and output connections/weights are not updated during backpropagation.
 15. $Z=W(a/p_k)+b$; $p_k$ is the keep probability to compensate for the decrease of $a$ due to the dropped out input neurons
-16. 
+16. One can choose to assign different keep probabilities to different layers in the NN. Usually, lower keep probability will be assigned to a layer with more neurons because fatter layers are more prone to overfitting. A keep probability of 1 can also be assigned to a layer, say a layer with one neuron.
+17. 
