@@ -33,3 +33,41 @@
 17. With dropout regularization, the loss function is different for different dropouts because some weights and neurons get randomly dropped out during each training sample or batch. So, it is not possible to keep track of the convergence of the loss function as training progresses. As a way around this limitation, one can observe the convergence of the loss function with the keep probability = 1. Once convergence of the loss function is confirmed, one can introduce the dropout regularization and train.
 18. Having **more training data** can help get a more generalized model, thereby, preventing overfitting. But getting new data can be expensive, time consuming and difficult. In case of image datasets, one can get more training data simply by flipping the training images or cropping the training images or reorient the training images or adding random distortions to the training images. This won't improve the training as much as adding newly clicked images, but, at least, its an easy, inexpensive way to increase the number of training data.
 19. **Early stopping** is stopping the training when the error or cost function dtops decreasing on the validation set.
+20. When training a neural network, one of the techniques to speed up your training is **normalization**. Normalizing the inputs speeds up the NN training. Normalizing your inputs corresponds to two steps:
+  - The first is to subtract the mean from each of the training samples. There will be a separate mean for each feature. Subtract the means to the corresponding features of the training and test samples. This subtraction renders the means of all the features of the samples equal to 0.
+  - Then the second step is to normalize the variances. Obtain the feature-wise standard deviations of the samples obtained from step 1. Divide the same samples by their standard deviations to normalize them. This renders the variances of all the features of the training samples equal to 1.
+  - Now, use the same mean and std. dev. to normalize the test samples also.
+
+If your features came in on similar scales,e.g. if one feature, say x_1 ranges from 0-1 and x_2 ranges from minus 1-1, and x_3 ranges from 1-2, then normalization is less important although performing this type of normalization pretty much never does any harm. Often you'll do it anyway, if you are not sure whether or not it will help with speeding up training for your algorithm.
+
+**Why does normalization speed up the learning?**
+
+To develop an intuition for why normalization speeds up training, consider why a ball takes longer to reach the bottom in an elongated valley landscape, which is a metaphor for optimizing a cost function without normalized inputs in neural network training.
+
+**The Landscape Metaphor**
+
+Imagine a landscape representing the cost function of a neural network, where:
+ - The horizontal dimensions represent the parameters of the model.
+ - The vertical dimension represents the cost (or error) associated with those parameters.
+
+The goal of training the neural network is to find the lowest point in this landscape (the global minimum of the cost function), which corresponds to the best set of parameters for the model.
+
+**Elongated Valley Scenario**
+
+In the scenario of an elongated valley:
+ - The valley is much steeper in one direction (axis) than in the other. This difference in steepness represents the disparity in the scale of input features. Some weights (parameters) of the neural network must make large adjustments due to large-scale features, while others make tiny adjustments due to small-scale features.
+ - When gradient descent is applied to find the minimum, the steps taken in the direction of the steep sides are larger, potentially overshooting the minimum along the narrow axis. Conversely, the steps in the shallow direction are smaller, making progress slow.
+ - This mismatch in step sizes can cause the optimization path to zig-zag and take a longer time to converge to the minimum. The optimization path oscillates back and forth across the narrow axis of the valley because the gradient descent algorithm struggles to balance the progress in different directions due to the uneven scales.
+
+**Why It Takes Longer?**
+
+The key reasons for the longer path to the bottom are:
+ - Overshooting: Large steps in the steep direction can overshoot the minimum, requiring corrections that send the optimizer back and forth.
+ - Zig-Zagging: The need to correct overshoots and the slow progress in the shallow direction lead to a zig-zagging path, which is less efficient than a straight-line descent.
+ - Small Learning Rate Compromise: If the learning rate is reduced to prevent overshooting in the steep direction, progress becomes painfully slow in all directions, further delaying convergence.
+
+To visualize why the ball takes longer, picture trying to manually roll a ball down a narrow, elongated trough with one side significantly steeper than the other:
+- If you push the ball too hard (large learning rate), it rapidly oscillates from side to side (overshooting).
+- If you push too gently (small learning rate), progress is safe but slow, taking a long time to reach the bottom.
+- Achieving just the right push to get the ball to the bottom quickly is much more difficult in this uneven trough compared to a more uniformly shaped bowl.
+
