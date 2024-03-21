@@ -38,7 +38,7 @@
   - Then the second step is to normalize the variances. Obtain the feature-wise standard deviations of the samples obtained from step 1. Divide the same samples by their standard deviations to normalize them. This renders the variances of all the features of the training samples equal to 1.
   - Now, use the same mean and std. dev. to normalize the test samples also.
 
-If your features came in on similar scales,e.g. if one feature, say x_1 ranges from 0-1 and x_2 ranges from minus 1-1, and x_3 ranges from 1-2, then normalization is less important although performing this type of normalization pretty much never does any harm. Often you'll do it anyway, if you are not sure whether or not it will help with speeding up training for your algorithm.
+If your features came in on similar scales,e.g. if one feature, say $x_1$ ranges from 0-1 and $x_2$ ranges from minus 1-1, and $x_3$ ranges from 1-2, then normalization is less important although performing this type of normalization pretty much never does any harm. Often you'll do it anyway, if you are not sure whether or not it will help with speeding up training for your algorithm.
 
 **Why does normalization speed up the learning?**
 
