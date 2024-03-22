@@ -63,11 +63,14 @@ Imagine a landscape representing the cost function of a neural network, where:
 The goal of training the neural network is to find the lowest point in this landscape (the global minimum of the cost function), which corresponds to the best set of parameters for the model. 
  - **In case of training using unnormalized data, the shape of the cost function is like a folded page with a base having narrow, thin elliptical shadow. The fold lies along the parameter $y$ with large range. The slope of the cost function is very low along the $y$ direction but very steep along the $x$ direction.**
 
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/CostFunctionUnnormalizedData.png)
 ![Narrow Elliptical Base](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/cdcc8fa2f7b60b82f803f757f17b8574d52ebc0d/NarrowEllipticalBase.png)
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/TrainingOnNon-NormalizedData.png)
 
  - **In case of training using normalized direction, the shape of the cost function is like a bowl with a base having circular shadow**
 
-![]()
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/CostFunctionNormalizedData.png)
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/TrainingOnNormalizedData.png)
 
 **Elongated Valley Scenario**
 
