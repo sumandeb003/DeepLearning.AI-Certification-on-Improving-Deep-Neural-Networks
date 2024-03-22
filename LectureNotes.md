@@ -35,7 +35,7 @@
 19. **Early stopping** is stopping the training when the error or cost function dtops decreasing on the validation set.
 20. When training a neural network, one of the techniques to speed up your training is **normalization**. Normalizing the inputs speeds up the NN training. Normalizing your inputs corresponds to two steps:
   - The first is to subtract the mean $\mu$ ($=\frac{1}{n}\Sigma x_i$) from each of the training samples. There will be a separate mean for each feature. Subtract the means to the corresponding features of the training and test samples. This subtraction renders the means of all the features of the samples equal to 0.
-  - Then the second step is to normalize the variances. Obtain the feature-wise standard deviations ($\sigma^2$) of the samples obtained from step 1. Divide the same samples by their standard deviations to normalize them. This renders the variances of all the features of the training samples equal to 1.
+  - Then the second step is to normalize the variances. Obtain the feature-wise standard deviations ($\sigma=\sqrt{variance}=\sqrt{\sigma^2}$) of the samples obtained from step 1. Divide the same samples by their standard deviations to normalize them. This renders the variances of all the features of the training samples equal to 1.
   - Now, use the same mean and std. dev. to normalize the test samples also.
 
 If your features came in on similar scales,e.g. if one feature, say $x_1$ ranges from 0-1 and $x_2$ ranges from minus 1-1, and $x_3$ ranges from 1-2, then normalization is less important although performing this type of normalization pretty much never does any harm. Often you'll do it anyway, if you are not sure whether or not it will help with speeding up training for your algorithm.
