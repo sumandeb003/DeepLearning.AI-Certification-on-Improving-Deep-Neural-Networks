@@ -57,10 +57,17 @@ To develop an intuition for why normalization speeds up training, consider why a
 **The Landscape Metaphor**
 
 Imagine a landscape representing the cost function of a neural network, where:
- - The horizontal dimensions represent the parameters of the model.
- - The vertical dimension represents the cost (or error) associated with those parameters.
+ - The horizontal dimensions represent the parameters (here, $x$ and $y$) of the model. In case of training using unnormalized data, one of the parameters has a large range while the other has a small range. Let's say, $y$ has a large range while $x$ has a small range.
+ - The vertical dimension represents the cost $J$ (or error) associated with those parameters.
 
-The goal of training the neural network is to find the lowest point in this landscape (the global minimum of the cost function), which corresponds to the best set of parameters for the model.
+The goal of training the neural network is to find the lowest point in this landscape (the global minimum of the cost function), which corresponds to the best set of parameters for the model. 
+ - **In case of training using unnormalized data, the shape of the cost function is like a folded page with a base having narrow, thin elliptical shadow. The fold lies along the parameter $y$ with large range. The slope of the cost function is very low along the $y$ direction but very steep along the $x$ direction.**
+
+![Narrow Elliptical Base](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/cdcc8fa2f7b60b82f803f757f17b8574d52ebc0d/NarrowEllipticalBase.png)
+
+ - **In case of training using normalized direction, the shape of the cost function is like a bowl with a base having circular shadow**
+
+![]()
 
 **Elongated Valley Scenario**
 
@@ -77,7 +84,7 @@ The key reasons for the longer path to the bottom are:
  - Small Learning Rate Compromise: If the learning rate is reduced to prevent overshooting in the steep direction, progress becomes painfully slow in all directions, further delaying convergence.
 
 To visualize why the ball takes longer, picture trying to manually roll a ball down a narrow, elongated trough with one side significantly steeper than the other:
-- If you push the ball too hard (large learning rate), it rapidly oscillates from side to side (overshooting).
+- If you push the ball too hard (large learning rate), it rapidly oscillates from side to side (overshooting), thereby, taking longer.
 - If you push too gently (small learning rate), progress is safe but slow, taking a long time to reach the bottom.
 - Achieving just the right push to get the ball to the bottom quickly is much more difficult in this uneven trough compared to a more uniformly shaped bowl.
 
