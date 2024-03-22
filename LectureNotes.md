@@ -71,7 +71,7 @@ The goal of training the neural network is to find the lowest point in this land
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/CostFunctionNormalizedData.png)
 
-![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/TrainingOnNormalizedData.png)
+
 
 **Elongated Valley Scenario**
 
@@ -83,8 +83,7 @@ In the scenario of an elongated valley:
 **Why It Takes Longer?**
 
 The key reasons for the longer path to the bottom are:
- - Overshooting: Large steps in the steep direction can overshoot the minimum, requiring corrections that send the optimizer back and forth.
- - Zig-Zagging: The need to correct overshoots and the slow progress in the shallow direction lead to a zig-zagging path, which is less efficient than a straight-line descent.
+ - Overshooting and Zig-Zagging: Large steps in the steep direction can overshoot the minimum, requiring corrections that send the optimizer back and forth. The need to correct overshoots and the slow progress in the shallow direction lead to a zig-zagging path, which is less efficient than a straight-line descent.
  - Small Learning Rate Compromise: If the learning rate is reduced to prevent overshooting in the steep direction, progress becomes painfully slow in all directions, further delaying convergence.
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/TrainingOnNon-NormalizedData.png)
@@ -94,3 +93,6 @@ To visualize why the ball takes longer, picture trying to manually roll a ball d
 - If you push too gently (small learning rate), progress is safe but slow, taking a long time to reach the bottom.
 - Achieving just the right push to get the ball to the bottom quickly is much more difficult in this uneven trough compared to a more uniformly shaped bowl.
 
+Training using normalized data is smooth, easy and faster.
+
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/TrainingOnNormalizedData.png)
