@@ -67,8 +67,6 @@ The goal of training the neural network is to find the lowest point in this land
 
 ![Narrow Elliptical Base](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/cdcc8fa2f7b60b82f803f757f17b8574d52ebc0d/NarrowEllipticalBase.png)
 
-![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/TrainingOnNon-NormalizedData.png)
-
  - **In case of training using normalized direction, the shape of the cost function is like a bowl with a base having circular shadow**
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/CostFunctionNormalizedData.png)
@@ -88,6 +86,8 @@ The key reasons for the longer path to the bottom are:
  - Overshooting: Large steps in the steep direction can overshoot the minimum, requiring corrections that send the optimizer back and forth.
  - Zig-Zagging: The need to correct overshoots and the slow progress in the shallow direction lead to a zig-zagging path, which is less efficient than a straight-line descent.
  - Small Learning Rate Compromise: If the learning rate is reduced to prevent overshooting in the steep direction, progress becomes painfully slow in all directions, further delaying convergence.
+
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/TrainingOnNon-NormalizedData.png)
 
 To visualize why the ball takes longer, picture trying to manually roll a ball down a narrow, elongated trough with one side significantly steeper than the other:
 - If you push the ball too hard (large learning rate), it rapidly oscillates from side to side (overshooting), thereby, taking longer.
