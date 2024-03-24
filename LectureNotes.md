@@ -110,3 +110,4 @@ Training using normalized data is smooth, easy and faster.
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7cdbd012bfbb4afe81291afaab871d176ba3e93f/BP5.png)
 
 
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/5ba6699a30106ee128d3ed2b9bd81fe157fda33c/VanishingGradientProblem.png)
