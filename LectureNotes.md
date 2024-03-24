@@ -103,9 +103,9 @@ Training using normalized data is smooth, easy and faster.
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7cdbd012bfbb4afe81291afaab871d176ba3e93f/BP2.png)
 
-During learning via backpropagation, to calculate the weight update for $W_1$, we need $\frac{\partial O}{\partial W_1}$ and for $W_2$, we need $\frac{\partial O}{\partial W_2}$. 
-
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7cdbd012bfbb4afe81291afaab871d176ba3e93f/BP3.png)
+
+During learning via backpropagation, to calculate the weight update for $W_1$, we need $\frac{\partial O}{\partial W_1}$ and for $W_2$, we need $\frac{\partial O}{\partial W_2}$. 
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7cdbd012bfbb4afe81291afaab871d176ba3e93f/BP4.png)
 
