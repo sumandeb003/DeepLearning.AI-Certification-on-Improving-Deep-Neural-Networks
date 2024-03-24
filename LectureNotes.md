@@ -119,8 +119,8 @@ So, all the weight terms and the gradient terms in the product $\frac{\partial O
 
 **As the number of layers increases,** the number of fractional terms in this product increases and therefore, **the product** $\frac{\partial O}{\partial W_1}$ **decreases exponentially**. 
 
-For large number of layers, the product becomes vanishingly small. As a result, the weight updates for the initial layers become vanishingly small, causing negligible or no learning in the initial layers. This is known as the problem of **vanishing gradient**.
+For large number of layers, the product becomes vanishingly small. As a result, the weight updates for the initial layers become vanishingly small, causing negligible or no learning in the initial layers. This is known as the **problem of vanishing gradient**.
 
-If the terms in the product are greater than 1, the product $\frac{\partial O}{\partial W_1}$ will increase exponentially with increasing layers. For large number of layers, the gradient $\frac{\partial O}{\partial W_1}$ explodes. As a result, the weight updates will get too large causing oscillation or even divergence during gradient descent This is known as the problem of **exploding gradient**.
+If the terms in the product are greater than 1, the product $\frac{\partial O}{\partial W_1}$ will increase exponentially with increasing layers. For large number of layers, the gradient $\frac{\partial O}{\partial W_1}$ explodes. As a result, the weight updates will get too large causing oscillation or even divergence during gradient descent This is known as the **problem of exploding gradient**.
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/5ba6699a30106ee128d3ed2b9bd81fe157fda33c/VanishingGradientProblem.png)
