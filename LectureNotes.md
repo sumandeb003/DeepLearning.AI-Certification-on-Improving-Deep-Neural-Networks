@@ -113,6 +113,6 @@ During learning via backpropagation, to calculate the weight update for $W_1$, w
 
 As you can see above, $\frac{\partial O}{\partial W_1}$ is the product of the weights in all the following layers and the gradient of the activation functions in all the following layers of the NN.
  - The weights are randomly drawn from a normal or gaussian distribution with mean 0 and standard deviation 1. So, they are all fractions between -1 and +1.
- - If the activation function ($f_a$) is sigmoid, its gradient $\frac{\partial f_a}{\partial \theta}$ is given by $\theta(1-\theta)$.
+ - If the activation function ($f_a$) is sigmoid, its gradient $\frac{\partial f_a}{\partial \theta}$ is given by $\theta(1-\theta)$. Min and max values of $\frac{\partial f_a}{\partial \theta}$ are 0 and 1/4 (for $\theta=0.5$)
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/5ba6699a30106ee128d3ed2b9bd81fe157fda33c/VanishingGradientProblem.png)
