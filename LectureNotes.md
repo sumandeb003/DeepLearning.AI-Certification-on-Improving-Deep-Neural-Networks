@@ -125,4 +125,4 @@ If the terms in the product are greater than 1, the product $\frac{\partial O}{\
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/5ba6699a30106ee128d3ed2b9bd81fe157fda33c/VanishingGradientProblem.png)
 
-To prevent vanishing gradient, we draw the weights of a neuron in an NN randomly from a gaussian distribution with mean 0 but variance $1/N$, where $N$ is the number of input nodes of this neuron. 
+To prevent vanishing gradient, we initialize the weights of a neuron in an NN by randomly drawing them from a gaussian distribution with mean 0 but variance $1/N$, where $N$ is the number of input nodes of this neuron. 
