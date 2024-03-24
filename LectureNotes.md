@@ -127,4 +127,4 @@ If the terms in the product are greater than 1, the product $\frac{\partial O}{\
 
 **To prevent vanishing gradient:**
  - Use ReLU activation function. It has a gradient/slope of 1 for $x>0$.
- - We initialize the weights of a neuron in an NN by randomly drawing them from a gaussian distribution with mean 0 but variance $1/N$, where $N$ is the number of input nodes of this neuron. 
+ - We initialize the weights of a neuron in an NN by randomly drawing them from a gaussian distribution with mean 0 but variance $1/N$, where $N$ is the number of input nodes of this neuron. It turns out for ReLU, a variance of $2/N$ works little better.
