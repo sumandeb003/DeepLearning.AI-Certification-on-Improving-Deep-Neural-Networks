@@ -111,7 +111,7 @@ During learning via backpropagation, to calculate the weight update for $W_1$, w
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7cdbd012bfbb4afe81291afaab871d176ba3e93f/BP5.png)
 
-**As you can see above, $\frac{\partial O}{\partial W_1}$ is the product of the weights in all the following layers and the gradient of the activation functions in all the following layers of the NN.**
+**As you can see above, $\frac{\partial O}{\partial W_1}$ is the product of the weights in all the following layers and the gradient (slope) of the activation functions in all the following layers of the NN.**
  - The weights are randomly drawn from a normal or gaussian distribution with mean 0 and standard deviation 1. So, they are all fractions between -1 and +1.
  - If the activation function ($f_a$) is sigmoid, its gradient $\frac{\partial f_a}{\partial \theta}$ (slope of the activation function at a point) is given by $\theta(1-\theta)$. Min and max values of $\frac{\partial f_a}{\partial \theta}$ are 0 and 1/4 (for $\theta=0.5$) respectively. So, its values lie between 0 and 1/4.
 
@@ -125,4 +125,6 @@ If the terms in the product are greater than 1, the product $\frac{\partial O}{\
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/5ba6699a30106ee128d3ed2b9bd81fe157fda33c/VanishingGradientProblem.png)
 
-To prevent vanishing gradient, we initialize the weights of a neuron in an NN by randomly drawing them from a gaussian distribution with mean 0 but variance $1/N$, where $N$ is the number of input nodes of this neuron. 
+**To prevent vanishing gradient:**
+ - Use ReLU activation function. It has a gradient/slope of 1 for $x>0$.
+ - We initialize the weights of a neuron in an NN by randomly drawing them from a gaussian distribution with mean 0 but variance $1/N$, where $N$ is the number of input nodes of this neuron. 
