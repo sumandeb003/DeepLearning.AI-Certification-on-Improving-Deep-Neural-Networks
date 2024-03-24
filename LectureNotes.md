@@ -96,3 +96,5 @@ To visualize why the ball takes longer, picture trying to manually roll a ball d
 Training using normalized data is smooth, easy and faster.
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7ef31b1b26302a1e7c8a6f71410a8964bcc186c6/TrainingOnNormalizedData.png)
+
+21. **Vanishing Gradient Problem/Exploding Gradient Problem:** 
