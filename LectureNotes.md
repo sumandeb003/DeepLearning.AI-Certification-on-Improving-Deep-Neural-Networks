@@ -125,6 +125,6 @@ If the terms in the product are greater than 1, the product $\frac{\partial O}{\
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/5ba6699a30106ee128d3ed2b9bd81fe157fda33c/VanishingGradientProblem.png)
 
-**To prevent vanishing gradient:**
+**To reduce the vanishing gradient problem:**
  - Use ReLU activation function. It has a gradient/slope of 1 for $x>0$.
  - We initialize the weights of a neuron in an NN by randomly drawing them from a gaussian distribution with mean 0 but variance $1/N$, where $N$ is the number of input nodes of this neuron. It turns out for ReLU, a variance of $2/N$ works little better.
