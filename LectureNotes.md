@@ -143,3 +143,4 @@ If the terms in the product are greater than 1, the product $\frac{\partial O}{\
 
 The derivative (slope) at a point $(f(\theta),\theta)$ lying on the above curve: $f(\theta)=\theta^3$ is given by: 
  - Ratio of height to base of the upper small triangle, *i.e.*, $\frac{f(\theta+\epsilon)-f(\theta)}{\epsilon}$
+ - Ratio of height to base of the outer large triangle, *i.e.*, $\frac{f(\theta+\epsilon)-f(\theta-\epsilon)}{2\epsilon}$
