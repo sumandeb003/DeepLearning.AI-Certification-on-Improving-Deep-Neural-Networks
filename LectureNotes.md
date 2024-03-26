@@ -10,7 +10,8 @@
      - **High bias => Low Accuracy on training set => Underfitting (poor fitting) the training data by being an oversimplified model (e.g. linear instead of being curve, say, quadratic etc)**
      - In statistics, bias is calculated as the average squared distance between the actual data points and the corresponding points on the learned function (model). Bias is a measure of the inability of the model to capture/match/reproduce the true relationship. High bias leads to loss of training accuracy.
        
-3. **Bias-Variance Tradeoff**:
+## Bias-Variance Tradeoff
+
      - To reduce bias, we try to match the learned function with the true/real relationship. In doing so, we end up matching the learned function with the extra peculiarities/complexities of the training data i.e. overfitting the training data. This increases the variance of the model.
      - To reduce variance, we try to reduce the complexity of the learned function. This leads to a simplified model which underfits or poorly fits the training data, thereby, increasing bias.
 
@@ -21,7 +22,9 @@
 
 ![./Overfitting.png](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/main/Overfitting.png)
 
-8. **Regularization is the process of simplifying the model to prevent overfitting.** A model can be simplified or a simpler model can be obtained by either reducing the size (no. of neurons) of the NN or reducing the weight of certain neurons in the NN.
+## Regularization
+
+**Regularization** is the process of simplifying the model to prevent overfitting. A model can be simplified or a simpler model can be obtained by either reducing the size (no. of neurons) of the NN or reducing the weight of certain neurons in the NN.
 9. Types of Regularization: L1, L2, Dropout, More training data, Early Stopping training
 10. To regularize the NN model by reducing the weights, a term containing the weights is added to the loss function. Minimizing the loss function during training also minimizes the weights. If the weights go up, the loss value goes up. Training brings down the loss value.
 11. Two types of regularization terms are possible:
