@@ -140,3 +140,5 @@ If the terms in the product are greater than 1, the product $\frac{\partial O}{\
 ## Gradient Approximation
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/b56e1966e891b0ca072b0ca97ca4180f24bd5011/GradientApproximation.png)
+
+The derivative at a point $(f(\theta),\theta)$ lying on the above curve: $f(\theta)=\theta$
