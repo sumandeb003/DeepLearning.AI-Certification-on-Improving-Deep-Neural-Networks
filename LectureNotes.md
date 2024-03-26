@@ -142,5 +142,5 @@ If the terms in the product are greater than 1, the product $\frac{\partial O}{\
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/b56e1966e891b0ca072b0ca97ca4180f24bd5011/GradientApproximation.png)
 
 The derivative (slope) at a point $(f(\theta),\theta)$ lying on the above curve: $f(\theta)=\theta^3$ is given by: 
- - Ratio of height to base of the upper small triangle, *i.e.*, $\frac{f(\theta+\epsilon)-f(\theta)}{\epsilon}$
+ - Ratio of height to base of the upper small triangle, *i.e.*, $\frac{f(\theta+\epsilon)-f(\theta)}{\epsilon}$ = $\frac{(\theta+\epsilon)^3 - (\theta)^3}{\epsilon}$ = $\frac{(\theta(1+\frac{\epsilon}{\theta}))^3 - (\theta)^3}{\epsilon}$
  - Ratio of height to base of the outer large triangle, *i.e.*, $\frac{f(\theta+\epsilon)-f(\theta-\epsilon)}{2\epsilon}$
