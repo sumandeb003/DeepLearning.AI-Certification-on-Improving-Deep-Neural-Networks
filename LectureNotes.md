@@ -2,11 +2,11 @@
 
 ## Bias-Variance Tradeoff
 
-Assuming:
+2. Assuming:
  - Bayes error is quite small
  - Training and validation sets are drawn from the same distribution
 
-We can define **$\color{red}{\textbf{bias}}$** and **$\color{red}{\textbf{variance}}$** problems as:
+3. We can define **$\color{red}{\textbf{bias}}$** and **$\color{red}{\textbf{variance}}$** problems as:
  - **High variance => Poor generalizability => Big change in accuracy from training set to test/validation set**
  - Variance is the change in the model's performance (accuracy) with changes in the dataset.
  - In statistics, we don't want the model's performance (accuracy) to change much with little changes in the training dataset. 
