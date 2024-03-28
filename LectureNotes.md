@@ -119,7 +119,7 @@ During learning via backpropagation, to calculate the weight update for $W_1$, w
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7cdbd012bfbb4afe81291afaab871d176ba3e93f/BP5.png)
 
-**BACKPROPAGATION = CHAIN RULE FOR OBTAINING DERIVATIVE OF THE LOSS FUNCTION W.R.T A WEIGHT AS A PRODUCT OF OTHER DERIVATIVES W.R.T WEIGHTS IN THE INTERNEDIATE LAYERS**
+**BACKPROPAGATION = CHAIN RULE** for obtaining derivative of the loss function w.r.t to a weight as product of derivatives of activation functions and derivatives of activations in the intermediate layers
 
 **As you can see above, $\frac{\partial O}{\partial W_1}$ is the product of the weights in all the following layers and the gradient (slope) of the activation functions in all the following layers of the NN.**
  - The weights are randomly drawn from a normal or gaussian distribution with mean 0 and standard deviation 1. So, they are all fractions between -1 and +1.
