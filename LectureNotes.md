@@ -119,6 +119,8 @@ During learning via backpropagation, to calculate the weight update for $W_1$, w
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7cdbd012bfbb4afe81291afaab871d176ba3e93f/BP5.png)
 
+### Backpropagation
+
 **BACKPROPAGATION = CHAIN RULE** for obtaining derivative (gradient or slope) of the loss function w.r.t to a weight as product of derivatives of activation functions ($\sigma$) and derivatives of activations ($z=wx+b$) in the intermediate layers
 
 The gradient/slope/derivative ($\frac{\partial J}{\partial w_i}$) points in the direction of steepest increase of the loss function ($J$) with respect to the weight($w_i$). To minimize the loss, we move in the opposite direction, hence the subtraction in the update rule
