@@ -165,4 +165,4 @@ In mini-batch training:
 - A fraction (learning rate) of this gradient is subtracted from the weight to get the new weight
 - So, the weights are updated at the end of each mini-batch
 
-Mini-batch training is faster than batch training
+**Mini-batch training is faster than batch training**
