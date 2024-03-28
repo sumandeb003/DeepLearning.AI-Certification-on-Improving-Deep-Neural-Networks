@@ -154,5 +154,5 @@ The derivaitve of a multi-dimensional cost function $J(\theta_1, \theta_2, \thet
 
 In batch training:
 - All the training samples are forward passed through the NN.
-- Then, the value of loss function is calculated (from the above step) over the entire training set.
-- The 
+- Then, the value of gradient of loss function ($\frac{\partial L}{\partial w_i}$) is calculated (from the above step) over the entire training set.
+- A fraction (learning rate) of this gradient is subtracted from the weight to get the new weight
