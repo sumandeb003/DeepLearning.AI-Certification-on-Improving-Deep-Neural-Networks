@@ -158,7 +158,7 @@ The gradient/slope/derivative ($\frac{\partial J}{\partial w_i}$) points in the 
 In batch training:
 - All the training samples are forward passed through the NN.
 - Then, the value of gradient of loss function ($\frac{\partial J}{\partial w_i}$) is calculated (from the above step) over the entire training set.
-- A fraction (learning rate) of this gradient is subtracted from the weight to get the new weight: $w_i = w_i - \frac{\partial J}{\partial w_i}$
+- A fraction (learning rate, $\neda$) of this gradient is subtracted from the weight to get the new weight: $w_i = w_i - \frac{\partial J}{\partial w_i}$
 - So, the weights are updated only once, at the end of the epoch
 
 In mini-batch training:
