@@ -233,3 +233,6 @@ Let's use a mini-batch of 3 samples for vectorization illustration:
 =\sigma(\begin{bmatrix}0.905&1.009&0.905\end{bmatrix}+\begin{bmatrix}0.4&0.4&0.4\end{bmatrix})
 =\sigma(\begin{bmatrix}1.305&1.409&1.305\end{bmatrix})
 ```
+```math
+= \begin{bmatrix}0.79&0.80&0.79\end{bmatrix}
+```
