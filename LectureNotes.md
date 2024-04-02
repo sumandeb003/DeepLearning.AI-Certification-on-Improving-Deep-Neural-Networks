@@ -214,7 +214,7 @@ Let's use a mini-batch of 2 samples for vectorization illustration:
 **Batchwise Forward Propagation:**
 
 ```math
-$\sigma(Z)=\sigma(\begin{bmatrix}0.10 & 0.40\\ 0.20 & 0.50\\0.30 & 0.60\end{bmatrix}\begin{bmatrix}1&0&1\\0&1&0\end{bmatrix}+\begin{bmatrix}0.1&0.1&0.1 \\ 0.2&0.2&0.2 \\ 0.3&0.3&0.3\end{bmatrix})
+\sigma(Z)=\sigma(\begin{bmatrix}0.10 & 0.40\\ 0.20 & 0.50\\0.30 & 0.60\end{bmatrix}\begin{bmatrix}1&0&1\\0&1&0\end{bmatrix}+\begin{bmatrix}0.1&0.1&0.1 \\ 0.2&0.2&0.2 \\ 0.3&0.3&0.3\end{bmatrix})
 = \sigma(\begin{bmatrix}0.1&0.4&0.1\\0.2&0.5&0.2\\0.3&0.6&0.3\end{bmatrix})+\sigma(\begin{bmatrix}0.1&0.1&0.1 \\ 0.2&0.2&0.2 \\ 0.3&0.3&0.3\end{bmatrix})
 = \sigma(\begin{bmatrix}0.2&0.5&0.2\\0.4&0.7&0.4\\0.6&0.9&0.6\end{bmatrix})
 ```
