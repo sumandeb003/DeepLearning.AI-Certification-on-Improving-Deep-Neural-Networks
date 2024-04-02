@@ -183,3 +183,7 @@ In mini-batch training:
 ```
 
 **Biases ($b_h$) for Hidde Layer:**
+
+```math
+\begin{bmatrix}0.1 & 0.2 & 0.3\end{bmatrix}
+```
