@@ -177,6 +177,7 @@ In mini-batch training:
 
 **Weights and Biases (Assumed)**
 
-**Weights from Input to Hidden Layer ($W_{ih}$):** ```math
+**Weights from Input to Hidden Layer ($W_{ih}$):** 
+```math
 \begin{bmatrix}0.15 & 0.20 & 0.25\\0.20 & 0.35 & 0.40\end{bmatrix}
 ```
