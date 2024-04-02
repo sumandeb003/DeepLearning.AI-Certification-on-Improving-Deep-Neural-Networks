@@ -194,3 +194,5 @@ In mini-batch training:
 ```math
 \begin{bmatrix}0.4 \\ 0.5 \\ 0.6\end{bmatrix}
 ```
+
+**Bias for Output Layer ($b_o$):** 0.4
