@@ -245,4 +245,3 @@ The three columns in [0.79 0.80 0.79] represent the three outputs corresponding 
 - **not just the output of a neuron for an training sample, but also**
 - **the outputs of an entire layer of neurons for all the samples in a mini-batch.**
 
-
