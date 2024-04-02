@@ -176,6 +176,7 @@ In mini-batch training:
 - **Output Layer**: 1 neuron (with sigmoid activation)
 
 **Weights and Biases (Assumed)**
+
 **Weights from Input to Hidden Layer ($W_{ih}$):**
 
 ```math
