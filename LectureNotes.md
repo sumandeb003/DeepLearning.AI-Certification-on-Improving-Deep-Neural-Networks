@@ -245,3 +245,6 @@ The three columns in [0.79 0.80 0.79] represent the three outputs corresponding 
 - **not just the output of a neuron for an training sample, but also**
 - **the outputs of an entire layer of neurons for all the samples in a mini-batch.**
 
+- **Use batch training if training set has less than 2000 samples.**
+- Due to the way how computer memory is layed out and accessed, mini-batches with sizes of the power of 2 work better. **Mini-batch sizes of $2^6$, $2^7$, $2^8$, $2^9$ are more commonly used in machine learning.**
+- Mini-batch size should be such that it fits in the CPU/GPU memory. If it doesn't fit, the performance will fall sharply.
