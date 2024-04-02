@@ -192,7 +192,7 @@ In mini-batch training:
 **Weights ($W_{ho}$) from Hidden to Output Layer:**
 
 ```math
-\begin{bmatrix}0.4 \\ 0.5 \\ 0.6\end{bmatrix}
+\begin{bmatrix}0.4 & 0.5 & 0.6\end{bmatrix}
 ```
 
 **Bias for Output Layer ($b_o$):** 0.4
@@ -202,7 +202,7 @@ Let's use a mini-batch of 2 samples for vectorization illustration:
 **Inputs ($X$):**
 
 ```math
-\begin{bmatrix}1&0\\0&1\\1&1\end{bmatrix}
+\begin{bmatrix}1&0&1\\0&1&0\end{bmatrix}
 ```
 
 **Output Labels ($Y$):**
