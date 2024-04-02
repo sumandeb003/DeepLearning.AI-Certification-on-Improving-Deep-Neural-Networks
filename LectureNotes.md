@@ -187,3 +187,8 @@ In mini-batch training:
 ```math
 \begin{bmatrix}0.1 \\ 0.2 \\ 0.3\end{bmatrix}
 ```
+**Weights ($W_{ho}$) from Hidden to Output Layer:**
+
+```math
+\begin{bmatrix}0.4 \\ 0.5 \\ 0.6\end{bmatrix}
+```
