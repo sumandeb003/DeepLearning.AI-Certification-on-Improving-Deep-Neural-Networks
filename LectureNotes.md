@@ -170,6 +170,14 @@ In mini-batch training:
 
 **Mini-batch training is faster than batch training**
 
+**Network Architecture**
+- **Input Layer**: 2 features
+- **Hidden Layer**: 3 neurons (with sigmoid activation)
+- **Output Layer**: 1 neuron (with sigmoid activation)
+
+**Weights and Biases (Assumed)**
+**Weights from Input to Hidden Layer ($W_{ih}$):**
+
 ```math
-\begin{bmatrix}X\\Y\end{bmatrix}
+\begin{bmatrix}0.15 & 0.2 & 0.25\\0.2 & 0.35 & 0.4\end{bmatrix}
 ```
