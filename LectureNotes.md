@@ -196,3 +196,11 @@ In mini-batch training:
 ```
 
 **Bias for Output Layer ($b_o$):** 0.4
+
+Let's use a mini-batch of 2 samples for vectorization illustration:
+
+Inputs ($X$):
+
+```math
+\begin{bmatrix}1&0\\0&1\end{bmatrix}
+```
