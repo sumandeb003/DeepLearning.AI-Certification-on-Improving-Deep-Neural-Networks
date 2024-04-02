@@ -175,6 +175,8 @@ In mini-batch training:
 - **Hidden Layer**: 3 neurons (with sigmoid activation)
 - **Output Layer**: 1 neuron (with sigmoid activation)
 
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/c10056f676f24f59aa7b5a33196dd2e63f115d80/3layerNN.png)
+
 **Weights and Biases (Assumed)**
 
 **Weights ($W_{ih}$) from Input to Hidden Layer :** 
