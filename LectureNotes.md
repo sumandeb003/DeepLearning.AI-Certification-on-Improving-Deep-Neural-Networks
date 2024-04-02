@@ -179,5 +179,5 @@ In mini-batch training:
 **Weights from Input to Hidden Layer ($W_{ih}$):**
 
 ```math
-\begin{bmatrix}0.15 & 0.2 & 0.25\\0.2 & 0.35 & 0.4\end{bmatrix}
+\begin{bmatrix}0.15 & 0.20 & 0.25\\0.20 & 0.35 & 0.40\end{bmatrix}
 ```
