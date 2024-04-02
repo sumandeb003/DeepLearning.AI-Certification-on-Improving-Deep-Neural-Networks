@@ -169,3 +169,5 @@ In mini-batch training:
 - So, the weights are updated at the end of each mini-batch
 
 **Mini-batch training is faster than batch training**
+
+$\begin{bmatrix} X \\\ Y \end{bmatrix}$
