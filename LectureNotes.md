@@ -226,7 +226,7 @@ Each column of $X$ is one sample of the mini-batch
 ```math
 = \begin{bmatrix}0.55&0.62&0.55\\0.59&0.67&0.59\\0.65&0.71&0.65\end{bmatrix}
 ```
-Each column is the 
+Each column is the output vector of the hidden layer. Three columns represent the three output vectors (of the hidden layer) corresponding to the three samples in the mini-batch.
 
 **Output Layer:**
 
