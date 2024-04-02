@@ -181,7 +181,7 @@ In mini-batch training:
 
 **Weights ($W_{ih}$) from Input to Hidden Layer :** 
 ```math
-\begin{bmatrix}0.15 & 0.20 & 0.25\\0.20 & 0.35 & 0.40\end{bmatrix}
+\begin{bmatrix}0.15 & 0.20\\ 0.25 & 0.20\\0.20 & 0.40\end{bmatrix}
 ```
 
 **Biases ($b_h$) for Hidde Layer:**
@@ -199,8 +199,20 @@ In mini-batch training:
 
 Let's use a mini-batch of 2 samples for vectorization illustration:
 
-Inputs ($X$):
+**Inputs ($X$):**
 
 ```math
-\begin{bmatrix}1&0\\0&1\end{bmatrix}
+\begin{bmatrix}1&0\\0&1\\1&1\end{bmatrix}
+```
+
+**Output Labels ($Y$):**
+
+```math
+\begin{bmatrix}1\\0\\1\end{bmatrix}
+```
+
+**Batchwise Forward Propagation:**
+
+```math
+
 ```
