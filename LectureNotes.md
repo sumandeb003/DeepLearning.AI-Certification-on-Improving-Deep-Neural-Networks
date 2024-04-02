@@ -214,5 +214,5 @@ Let's use a mini-batch of 2 samples for vectorization illustration:
 **Batchwise Forward Propagation:**
 
 ```math
-\begin{bmatrix}0.15 & 0.20\\ 0.25 & 0.20\\0.20 & 0.40\end{bmatrix}\begin{bmatrix}1&0&1\\0&1&0\end{bmatrix}+\begin{bmatrix}0.1 \\ 0.2 \\ 0.3\end{bmatrix}
+Z=\begin{bmatrix}0.15 & 0.20\\ 0.25 & 0.20\\0.20 & 0.40\end{bmatrix}\begin{bmatrix}1&0&1\\0&1&0\end{bmatrix}+\begin{bmatrix}0.1&0.1&0.1 \\ 0.2&0.2&0.2 \\ 0.3&0.3&0.3\end{bmatrix}
 ```
