@@ -229,5 +229,6 @@ Let's use a mini-batch of 3 samples for vectorization illustration:
 **Output Layer:**
 
 ```math
-\begin{bmatrix}0.4 & 0.5 & 0.6\end{bmatrix}\begin{bmatrix}0.55&0.62&0.55\\0.59&0.67&0.59\\0.65&0.71&0.65\end{bmatrix}+\begin{bmatrix}0.4&0.4&0.4\end{bmatrix}
+\sigma(Z_o)=\sigma(\begin{bmatrix}0.4 & 0.5 & 0.6\end{bmatrix}\begin{bmatrix}0.55&0.62&0.55\\0.59&0.67&0.59\\0.65&0.71&0.65\end{bmatrix}+\begin{bmatrix}0.4&0.4&0.4\end{bmatrix})
+=\sigma(\begin{bmatrix}0.905&1.009&0.905\end{bmatrix}+\begin{bmatrix}0.4&0.4&0.4\end{bmatrix})
 ```
