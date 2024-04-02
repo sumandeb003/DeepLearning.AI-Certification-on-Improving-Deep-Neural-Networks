@@ -170,6 +170,6 @@ In mini-batch training:
 
 **Mini-batch training is faster than batch training**
 
-``math
+```math
 \begin{bmatrix}X\\Y\end{bmatrix}
 ```
