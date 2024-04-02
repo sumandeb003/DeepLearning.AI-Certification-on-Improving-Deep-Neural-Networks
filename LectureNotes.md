@@ -226,7 +226,7 @@ Each column of $X$ is one sample of the mini-batch
 ```math
 = \begin{bmatrix}0.55&0.62&0.55\\0.59&0.67&0.59\\0.65&0.71&0.65\end{bmatrix}
 ```
-Each column is the output vector of the hidden layer. Three columns represent the three output vectors (of the hidden layer) corresponding to the three samples in the mini-batch.
+The three columns in [0.55 0.62 0.55 .... 0.65 0.71 0.65] represent the three output vectors (of the hidden layer) corresponding to the three samples in the mini-batch.
 
 **Output Layer:**
 
@@ -239,4 +239,4 @@ Each column is the output vector of the hidden layer. Three columns represent th
 = \begin{bmatrix}0.79&0.80&0.79\end{bmatrix}
 ```
 
-Each column is an output of the output neuron. Three columns represent the three outputs corresponding to the three samples in the mini-batch.
+The three columns in [0.79 0.80 0.79] represent the three outputs corresponding to the three samples in the mini-batch.
