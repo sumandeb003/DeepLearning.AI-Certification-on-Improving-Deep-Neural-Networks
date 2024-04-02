@@ -241,4 +241,8 @@ The three columns in [0.55 0.62 0.55 .... 0.65 0.71 0.65] represent the three ou
 
 The three columns in [0.79 0.80 0.79] represent the three outputs corresponding to the three samples in the mini-batch.
 
-**$\sigma(Wx+b)$ is at the core of NN. $\sigma(WX+b)$ can be used to compute the output of an entire layer in a NN. Not just that, it can be used to compute the outputs of an entire layer for all the samples in a mini-batch.** 
+**$\sigma(Wx+b)$ is at the core of NN. Thanks to matrix-matrix multiplication, $\sigma(WX+b)$ can be used to compute:**
+- **not just the output of a neuron for an training sample, but also**
+- **the outputs of an entire layer of neurons for all the samples in a mini-batch.**
+
+
