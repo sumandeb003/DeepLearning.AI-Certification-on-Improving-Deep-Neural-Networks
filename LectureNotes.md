@@ -176,12 +176,18 @@ In mini-batch GD:
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/2eb88bf45d3111e5be2776f9e3f8159325e9ecf6/BatchGDvsMiniBatchGDvsStochasticGD.png)
 
+**Batch GD is stable while SGD is noisy and oscillatory in traversing to the global minima.**
+
+*In BGD as well as SGD, forward propagation happens as many times as the number of samples in the training set. In BGD, the weights of the network are updated (via backpropagation) once per epoch. In SGD, the weights of the network are updated (via propagation) once for every sample. So, per epoch, SGD updates the weights as many times as the number of samples in the entire training set. The number of weights updates (via backpropagation) is more in case of SGD than in the case of BGD while they have the same number of forward propagations. So, according to this logic, SGD should take longer than BGD for the same number of epochs. But, SGD may achieve lower accuracy than BGD in the same number of epochs due to the oscillatory nature of SGD.* - **Why is SGD considered to be computationally more efficient?**
+
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7e1311c424f25ca4e80cc7491c199e08fa938fa4/SGDvsBGDvsMiniGD.png)
 
-1. **Use batch training if training set has less than 2000 samples. Else, use mini-batch training.**
+1. **Can use batch training if the training set has less than 2000 samples. Else, use mini-batch training.**
 2. Due to the way how computer memory is layed out and accessed, mini-batches with sizes of the power of 2 work better. **Mini-batch sizes of $2^6$, $2^7$, $2^8$, $2^9$ are more commonly used in machine learning.**
  - **Also, mini-batch size should be such that it fits in the CPU/GPU memory**. If it doesn't fit, the performance will fall sharply.
  - **Start with a larger mini-batch size and lower if performance is poor.**
+3. 
+4. 
 
 **Network Architecture**
 - **Input Layer**: 2 features
