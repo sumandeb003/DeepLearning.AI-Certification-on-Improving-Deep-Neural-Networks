@@ -155,7 +155,7 @@ The gradient/slope/derivative ($\frac{\partial J}{\partial w_i}$) points in the 
 
 ## Batch vs Mini-batch vs Stochastic Gradient Descent (GD)
 
-In batch GD:
+In batch GD (BGD):
 - All the training samples are forward passed through the NN.
 - Then, the value of gradient of loss function ($\frac{\partial J}{\partial w_i}$) is calculated (from the above step) over the entire training set.
 - A fraction (learning rate, $\eta$) of this gradient is subtracted from the weight to get the new weight: $w_i = w_i - \eta\frac{\partial J}{\partial w_i}$
@@ -170,7 +170,7 @@ In mini-batch GD:
 
 **Mini-batch GD is faster than batch GD**
 
-**If size of mini-batch is 1, it is called stochastic GD.**
+**If size of mini-batch is 1, it is called stochastic GD (SGD).**
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/2eb88bf45d3111e5be2776f9e3f8159325e9ecf6/BatchGDvsMiniBatch%20GD.png)
 
