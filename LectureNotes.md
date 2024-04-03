@@ -176,6 +176,10 @@ In mini-batch GD:
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/2eb88bf45d3111e5be2776f9e3f8159325e9ecf6/BatchGDvsMiniBatchGDvsStochasticGD.png)
 
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/e1de84a027824ec2955c838fcd5fd83a09ceca79/SGDvsBGD.png)
+
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/e1de84a027824ec2955c838fcd5fd83a09ceca79/SGDvsBGDvsminiBGD.png)
+
 **Batch GD is stable while SGD is noisy and oscillatory in traversing to the global minima.**
 
 *In BGD as well as SGD, forward propagation happens as many times as the number of samples in the training set. In BGD, the weights of the network are updated (via backpropagation) once per epoch. In SGD, the weights of the network are updated (via propagation) once for every sample. So, per epoch, SGD updates the weights as many times as the number of samples in the entire training set. The number of weights updates (via backpropagation) is more in case of SGD than in the case of BGD while they have the same number of forward propagations. So, according to this logic, SGD should take longer than BGD for the same number of epochs. But, SGD may achieve lower accuracy than BGD in the same number of epochs due to the oscillatory nature of SGD.* - **Why is SGD considered to be computationally more efficient?**
