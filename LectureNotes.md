@@ -176,6 +176,8 @@ In mini-batch GD:
 
 ![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/2eb88bf45d3111e5be2776f9e3f8159325e9ecf6/BatchGDvsMiniBatchGDvsStochasticGD.png)
 
+![](https://github.com/sumandeb003/DeepLearning.AI-Certification-on-Improving-Deep-Neural-Networks/blob/7e1311c424f25ca4e80cc7491c199e08fa938fa4/SGDvsBGDvsMiniGD.png)
+
 1. **Use batch training if training set has less than 2000 samples. Else, use mini-batch training.**
 2. Due to the way how computer memory is layed out and accessed, mini-batches with sizes of the power of 2 work better. **Mini-batch sizes of $2^6$, $2^7$, $2^8$, $2^9$ are more commonly used in machine learning.**
  - **Also, mini-batch size should be such that it fits in the CPU/GPU memory**. If it doesn't fit, the performance will fall sharply.
