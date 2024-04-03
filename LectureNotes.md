@@ -153,22 +153,24 @@ The derivaitve of a multi-dimensional cost function $J(\theta_1, \theta_2, \thet
 
 The gradient/slope/derivative ($\frac{\partial J}{\partial w_i}$) points in the direction of steepest increase of the loss function ($J$) with respect to the weight($w_i$). To minimize the loss, we move in the opposite direction, hence the subtraction in the update rule
 
-## Batch vs Mini-batch Training
+## Batch vs Mini-batch vs Stochastic Gradient Descent (GD)
 
-In batch training:
+In batch GD:
 - All the training samples are forward passed through the NN.
 - Then, the value of gradient of loss function ($\frac{\partial J}{\partial w_i}$) is calculated (from the above step) over the entire training set.
 - A fraction (learning rate, $\eta$) of this gradient is subtracted from the weight to get the new weight: $w_i = w_i - \eta\frac{\partial J}{\partial w_i}$
 - So, the weights are updated only once, at the end of the epoch
 
-In mini-batch training:
+In mini-batch GD:
 - The training set is divided into mini batches.
 - All the training samples in a mini-batch are forward passed through the NN.
 - Then, the value of gradient of loss function ($\frac{\partial J}{\partial w_i}$) is calculated (from the above step) over the entire training set.
 - A fraction (learning rate, $\eta$) of this gradient is subtracted from the weight to get the new weight: $w_i = w_i - \eta\frac{\partial J}{\partial w_i}$
 - So, the weights are updated at the end of each mini-batch
 
-**Mini-batch training is faster than batch training**
+**Mini-batch GD is faster than batch GD**
+
+**If size of mini-batch is 1, it is called stochastic GD.**
 
 **Network Architecture**
 - **Input Layer**: 2 features
@@ -245,6 +247,8 @@ The three columns in [0.79 0.80 0.79] represent the three outputs corresponding 
 - **not just the output of a neuron for an training sample,**
 - **but also, the outputs of an entire layer of neurons for all the samples in a mini-batch.**
 
-- **Use batch training if training set has less than 2000 samples.**
-- Due to the way how computer memory is layed out and accessed, mini-batches with sizes of the power of 2 work better. **Mini-batch sizes of $2^6$, $2^7$, $2^8$, $2^9$ are more commonly used in machine learning.**
-- **Mini-batch size should be such that it fits in the CPU/GPU memory**. If it doesn't fit, the performance will fall sharply.
+
+1. **Use batch training if training set has less than 2000 samples. Else, use mini-batch training.**
+2. Due to the way how computer memory is layed out and accessed, mini-batches with sizes of the power of 2 work better. **Mini-batch sizes of $2^6$, $2^7$, $2^8$, $2^9$ are more commonly used in machine learning.**
+ - **Also, mini-batch size should be such that it fits in the CPU/GPU memory**. If it doesn't fit, the performance will fall sharply.
+ - **Start with a larger mini-batch size and lower if performance is poor.**
