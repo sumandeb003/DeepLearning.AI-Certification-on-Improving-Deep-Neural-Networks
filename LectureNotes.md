@@ -268,4 +268,4 @@ The three columns in [0.79 0.80 0.79] represent the three outputs corresponding 
 - **not just the output of a neuron for an training sample,**
 - **but also, the outputs of an entire layer of neurons for all the samples in a mini-batch.**
 
-The weight update equation for gradient descent, $w=w-\eta\frac{\partial L}{\partial w}$, is used not only for individual weights but also for the whole weight matrix of a layer: $W=W-\eta\frac{\partial L}{\partial W}$. $\frac{\partial L}{\partial W}$ is a matrix with shape same as that of matrix $W$.
+**The weight update equation for gradient descent, $w=w-\eta\frac{\partial L}{\partial w}$, is used not only for individual weights but also for the whole weight matrix of a layer: $W=W-\eta\frac{\partial L}{\partial W}$. $\frac{\partial L}{\partial W}$ computed from a mini-batch is a matrix with shape same as that of matrix $W$.**
